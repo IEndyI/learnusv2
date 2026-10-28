@@ -117,7 +117,7 @@ flutter run --dart-define=DEMO_STATE=empty     # 빈 상태
 ## 2. 구조
 
 ```
-mid-project-template/
+learnusv2/
 ├── README.md                 # 실행 방법 [필수]
 ├── AGENTS.md                 # AI 가드레일 (UI만) — CLAUDE.md는 이 파일을 따른다는 한 줄
 ├── pubspec.yaml              # 추가 패키지는 http 하나
@@ -150,9 +150,9 @@ mid-project-template/
 
 | 화면 | 이름 (TODO: 비즈니스 명칭) | 파일 | 전환 | 요소 번호 |
 |---|---|---|---|---|
-| A | TODO | `lib/screens/a_list_screen.dart` | 첫 화면 | A-1 ~ A-6 |
-| B | TODO | `lib/screens/b_detail_screen.dart` | 쌓기(push) · 옆으로(tab) | B-1 ~ B-7 |
-| C | TODO | `lib/screens/c_result_sheet.dart` | 덮기(modal) | C-1 ~ C-4 |
+| A | 학사 일정·과제 목록 | `lib/screens/a_list_screen.dart` | 첫 화면 | A-1 ~ A-6 |
+| B | 과제·공지 상세 안내 | `lib/screens/b_detail_screen.dart` | 쌓기(push) · 옆으로(tab) | B-1 ~ B-7 |
+| C | 과제 제출 체크리스트(임의) | `lib/screens/c_result_sheet.dart` | 덮기(modal) | C-1 ~ C-4 |
 
 각 화면 파일 맨 위에 **디자인 가이드 대응표**(번호 · Flutter 위젯명 · 비즈니스 명칭 · 원칙) 주석이 있고, 코드 안에서 같은 번호(`// A-5 P09`)로 찾을 수 있습니다. `docs/디자인가이드.md`와 1:1로 맞춥니다. **가이드에 없는 화면은 만들지 않습니다**(감점).
 

@@ -43,10 +43,10 @@ v2에서 바뀐 것 3개 — 원칙 카드(`docs/원칙카드.md`)의 P번호와
 ### 평가 및 리뷰
 | 항목 | 내용 |
 |---|---|
-| 현행 별점 | ★ 4.5 (App Store) |
-| 리뷰 수 | 평점 31개 |
+| 현행 별점 | ★ 4.6 (Google Play) |
+| 리뷰 수 | 리뷰 928개 |
 | 대표 리뷰 | "학점과 직결되는 문제들인데 앱만 믿었다간 학점에 흠결이 갈 수 있습니다" — ★1 · 2025-03-18 (**작성자 이름 지움**) |
-| 출처 | [App Store LearnUs YONSEI](https://apps.apple.com/us/app/id1550248141) · 확인한 날짜 2026-10-28 |
+| 출처 | [Google Play LearnUs YONSEI](https://play.google.com/store/apps/details?id=kr.coursemos.yonsei&hl=en) · 확인한 날짜 2026-10-28 |
 
 ---
 
@@ -54,7 +54,7 @@ v2에서 바뀐 것 3개 — 원칙 카드(`docs/원칙카드.md`)의 P번호와
 
 | 칸 | 내용 |
 |---|---|
-| 현행 앱 | LearnUs YONSEI ([App Store](https://apps.apple.com/us/app/id1550248141)) |
+| 현행 앱 | LearnUs YONSEI ([Google Play](https://play.google.com/store/apps/details?id=kr.coursemos.yonsei&hl=en)) |
 | v2 한 문장 | 급한 공지를 먼저 알아보고, 긴 안내문은 AI 2문장으로 파악한다 |
 | 작성자 | H.D. · 1인 1팀 (각자 제출) |
 | 데모 | `docs/영상/demo_1min.mp4` (1분 데모 영상) |

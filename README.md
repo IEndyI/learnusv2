@@ -1,9 +1,8 @@
 # LearnUs v2 — GAI3008 중간프로젝트 저장소 (1인 1팀)
-# LearnUs v2 — GAI3008 중간프로젝트 저장소 (1인 1팀)
 
 ## 앱 소개
 
-> 앱스토어 상품 페이지처럼 채웁니다. 칸 이름과 순서는 발표 자료의 "앱 소개" 장과 같습니다 — 바꾸지 않습니다.
+> 연세대 LearnUs의 공지·과제 마감을 한눈에 보여 주는 UI 프로토타입 (Flutter, UI만 구현).
 
 ### 앱 이름
 LearnUs v2
@@ -19,7 +18,6 @@ LearnUs v2
 - 사용 상황: 수업 사이 쉬는 시간, 스마트폰으로 (가끔 노트북 브라우저)
 
 ### 스크린샷
-이미지는 `docs/screenshots/`에 넣고 아래 링크의 파일 이름만 맞춥니다. 3~5칸, 왼쪽부터 v1(현행) → v2.
 
 | v1 현행 | v2 화면 A | v2 화면 B | v2 화면 C | v2 넓은 화면 |
 |---|---|---|---|---|
@@ -63,17 +61,6 @@ v2에서 바뀐 것 3개 — 원칙 카드(`docs/원칙카드.md`)의 P번호와
 > 이 저장소는 **UI만 구현**합니다(중간고사 안내문 5장). 보이기는 다 동작하는 것처럼, 실제 동작(저장·로그인·결제·실제 계산)은 없습니다.
 
 ---
-
-## 0. 처음 받았을 때: 폴더 이름 · 앱 이름 바꾸기
-
-1. **폴더(저장소) 이름**: `mid-project-template` → `<영문 앱 이름>-v2` (예: `mealapp-v2`). GitHub 저장소 이름도 같게.
-   - ⚠ **경로 전체를 영문·숫자·하이픈으로** 둡니다. 경로에 한글이 한 글자라도 있으면 `flutter analyze`(Flutter 3.44)가 analysis server 오류로 멈추는 것을 확인했습니다(`dart analyze`는 됨). 바탕화면·문서 폴더 이름이 한글이면 `C:\dev\` · `~/dev/` 같은 곳으로 옮깁니다.
-2. **앱 이름(화면에 보이는 이름)** — 아래만 바꾸면 됩니다:
-   - `lib/main.dart` — `MaterialApp(title: …)`, 각 화면 `AppBar` 제목
-   - Android: `android/app/src/main/AndroidManifest.xml`의 `android:label`
-   - iOS: `ios/Runner/Info.plist`의 `CFBundleDisplayName`
-   - 웹: `web/index.html`의 `<title>`, `web/manifest.json`의 `name`·`short_name`
-3. **패키지 이름 `mid_project_template`는 그대로 두는 것을 권장**합니다(바꾸면 `pubspec.yaml`의 `name`과 `test/`의 `import 'package:mid_project_template/…'`를 모두 고쳐야 함). 조직 ID는 `kr.ac.yonsei.gai3008`.
 
 ## 1. 실행 방법 — 터미널 2개
 
@@ -148,7 +135,7 @@ learnusv2/
 
 ## 3. 화면 목록 ↔ 기획 문서 요소 번호
 
-| 화면 | 이름 (TODO: 비즈니스 명칭) | 파일 | 전환 | 요소 번호 |
+| 화면 | 이름 (비즈니스 명칭) | 파일 | 전환 | 요소 번호 |
 |---|---|---|---|---|
 | A | 학사 일정·과제 목록 | `lib/screens/a_list_screen.dart` | 첫 화면 | A-1 ~ A-6 |
 | B | 과제·공지 상세 안내 | `lib/screens/b_detail_screen.dart` | 쌓기(push) · 옆으로(tab) | B-1 ~ B-7 |
@@ -228,7 +215,7 @@ grep -rnE "http\.(post|put|patch|delete)|SharedPreferences|sqflite|hive|Firebase
 ## 10. 확인된 상태 (템플릿 배포 시점)
 
 ```bash
-flutter analyze   # No issues found!  (경로가 영문일 때 — 0장 참고)
+flutter analyze   # No issues found!  (경로가 영문일 때)
 flutter test      # 2개 통과: 목록 표시 · A-7 도움말 안내창 열기/닫기
 ```
 
